@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class ServiceRadiologie extends Service {
-//    public ServiceRadiologie(Long id) {
-//        super(id);
-//    }
+    public ServiceRadiologie(Long id) {
+        super(id);
+    }
 }

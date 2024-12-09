@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Chirurgie extends Batiment {
-//    public Chirurgie(Long id, String emplacement, String taille, String fonctionnalite, String description) {
-//        super(id, emplacement, taille, fonctionnalite, description);
-//    }
+    public Chirurgie(Long id, String emplacement, String taille, String fonctionnalite, String description) {
+        super(id, emplacement, taille, fonctionnalite, description);
+    }
 }

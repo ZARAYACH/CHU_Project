@@ -1,9 +1,6 @@
 package module.designpatterns.chuprojet.Services;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,7 +13,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@Table(name = "chu_service")
 public class Service {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 }

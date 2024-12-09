@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ServicesMedicaux extends Service {
-//    public ServicesMedicaux(Long id) {
-//        super(id);
-//    }
+    public ServicesMedicaux(Long id) {
+        super(id);
+    }
 }

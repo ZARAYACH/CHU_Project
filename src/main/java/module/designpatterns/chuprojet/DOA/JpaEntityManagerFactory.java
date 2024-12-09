@@ -2,11 +2,14 @@ package module.designpatterns.chuprojet.DOA;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl;
 import org.hibernate.jpa.boot.internal.PersistenceUnitInfoDescriptor;
 
 import jakarta.persistence.spi.PersistenceUnitInfo;
+import org.reflections.Reflections;
+import sun.reflect.ReflectionFactory;
 
 import javax.sql.DataSource;
 import java.util.*;
@@ -14,7 +17,8 @@ import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class JpaEntityManagerFactory {
-    private String DB_URL = "jdbc:mysql://localhost:3306/CHU?createDatabaseIfNotExist=true";
+
+    private String DB_URL = "jdbc:mysql://localhost:3307/CHU?createDatabaseIfNotExist=true&useSSL=false";
     private String DB_USER_NAME = "root";
     private String DB_PASSWORD = "root";
 
@@ -52,7 +56,9 @@ public class JpaEntityManagerFactory {
     }
 
     protected Class[] getEntities() {
-        return null;
+        Reflections reflections = new Reflections("module.designpatterns.chuprojet");
+        Set<Class<?>> entityClasses = reflections.getTypesAnnotatedWith(Entity.class);
+        return entityClasses.toArray(new Class[0]);
     }
 
     protected DataSource getMysqlDataSource() {

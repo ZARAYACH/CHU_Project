@@ -9,9 +9,11 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 public class ServicesParamedicaux extends Service {
 
-//    public ServicesParamedicaux(Long id) {
-//        super(id);
-//    }
+    public ServicesParamedicaux(Long id) {
+        super(id);
+    }
+
 }

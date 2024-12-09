@@ -4,17 +4,17 @@ import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
+import lombok.NoArgsConstructor;
 
-@ApplicationScoped
+@Singleton
+@NoArgsConstructor
 public class EntityManagerSingleton {
 
     private EntityManager entityManager;
-    private final JpaEntityManagerFactory jpaEntityManagerFactory;
-    @PostConstruct
-    private void init() {
-        System.out.println("Singleton bean initialized.");
-    }
+    private JpaEntityManagerFactory jpaEntityManagerFactory;
+
     @Inject
     public EntityManagerSingleton(JpaEntityManagerFactory jpaEntityManagerFactory) {
         this.jpaEntityManagerFactory = jpaEntityManagerFactory;
@@ -22,7 +22,7 @@ public class EntityManagerSingleton {
     }
 
     @Produces
-    private EntityManager getEntityManager() {
+    public EntityManager getEntityManager() {
         if (entityManager != null) {
             return entityManager;
         }

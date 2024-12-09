@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ServiceAnalyse extends Service {
-//    public ServiceAnalyse(Long id) {
-//        super(id);
-//    }
+    public ServiceAnalyse(Long id) {
+        super(id);
+    }
 }

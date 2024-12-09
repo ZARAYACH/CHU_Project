@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ServiceUrgence extends Service {
 
-//    public ServiceUrgence(Long id) {
-//        super(id);
-//    }
+    public ServiceUrgence(Long id) {
+        super(id);
+    }
 }
