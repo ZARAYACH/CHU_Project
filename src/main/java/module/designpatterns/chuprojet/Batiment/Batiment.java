@@ -12,12 +12,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Batiment {
+public abstract class Batiment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String emplacement;
-    private String taille;
+    private Long taille;
     private String fonctionnalite;
     private String description;
 

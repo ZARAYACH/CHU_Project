@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Personnel extends Person {
+public abstract class Personnel extends Person {
 
     @Column(unique = true, nullable = false)
     private String PersonnelId;

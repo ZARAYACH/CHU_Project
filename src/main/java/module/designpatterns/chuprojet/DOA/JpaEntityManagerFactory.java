@@ -9,7 +9,6 @@ import org.hibernate.jpa.boot.internal.PersistenceUnitInfoDescriptor;
 
 import jakarta.persistence.spi.PersistenceUnitInfo;
 import org.reflections.Reflections;
-import sun.reflect.ReflectionFactory;
 
 import javax.sql.DataSource;
 import java.util.*;
@@ -18,9 +17,9 @@ import java.util.stream.Collectors;
 @ApplicationScoped
 public class JpaEntityManagerFactory {
 
-    private String DB_URL = "jdbc:mysql://localhost:3307/CHU?createDatabaseIfNotExist=true&useSSL=false";
-    private String DB_USER_NAME = "root";
-    private String DB_PASSWORD = "root";
+    private static final String DB_URL = "jdbc:mysql://localhost:3307/CHU?createDatabaseIfNotExist=true&useSSL=false" ;
+    private static final String DB_USER_NAME = "root";
+    private static final String DB_PASSWORD = "root";
 
     public JpaEntityManagerFactory() {
     }

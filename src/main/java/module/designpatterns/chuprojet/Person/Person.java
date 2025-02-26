@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Person {
+public abstract class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Administration extends Batiment {
 
-    public Administration(Long id, String emplacement, String taille, String fonctionnalite, String description) {
+    public Administration(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 
