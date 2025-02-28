@@ -21,4 +21,19 @@ public abstract class Batiment {
     private String fonctionnalite;
     private String description;
 
+    @Getter
+    @AllArgsConstructor
+    public enum category {
+        ADMINISTRATION(Administration.class),
+        CHIRUGIE(Chirurgie.class),
+        LABORATOIRES(Laboratoires.class),
+        MEDECINE_GENERALE(MedecineGenerale.class),
+        RADIOLOGIE(Radiologie.class),
+        SPECIALIRES_MEDICALES(SpecialitesMedicales.class),
+        URGENCE(Urgence.class);
+
+        private final Class<? extends Batiment> aClass;
+
+    }
+
 }
