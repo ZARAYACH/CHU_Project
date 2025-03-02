@@ -9,8 +9,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ServicesMedicaux extends Service {
+public class ServicesMedicaux extends ChuService {
     public ServicesMedicaux(Long id) {
         super(id);
+    }
+
+    @Override
+    public void servie() {
+        System.out.println("service Medicaux served");
     }
 }

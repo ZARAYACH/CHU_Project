@@ -15,4 +15,5 @@ public class Administration extends Batiment {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 
+
 }

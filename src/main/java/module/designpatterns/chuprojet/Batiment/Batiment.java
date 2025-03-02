@@ -5,12 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import module.designpatterns.chuprojet.Person.Personnel;
+
+import java.util.Collection;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Batiment {
     @Id
@@ -20,6 +22,18 @@ public abstract class Batiment {
     private Long taille;
     private String fonctionnalite;
     private String description;
+
+    public Batiment(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
+        this.id = id;
+        this.emplacement = emplacement;
+        this.taille = taille;
+        this.fonctionnalite = fonctionnalite;
+        this.description = description;
+    }
+
+    @OneToMany(mappedBy = "batiment")
+    private Collection<Personnel> personnel;
+
 
     @Getter
     @AllArgsConstructor
