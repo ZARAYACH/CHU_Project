@@ -1,5 +1,7 @@
 package module.designpatterns.chuprojet.Services;
 
+import module.designpatterns.chuprojet.Person.Personnel;
+
 import java.util.ArrayList;
 import java.util.List;
 

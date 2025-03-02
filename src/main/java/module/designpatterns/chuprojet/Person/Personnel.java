@@ -30,4 +30,11 @@ public abstract class Personnel extends Person {
         this.PersonnelId = PersonnelId;
         this.batiment = batiment;
     }
+    public void envoyerMessage(String message) {
+        System.out.println( message);
+    }
+
+    public void recevoirMessage(String message, String expediteur) {
+        System.out.println("📩 reçu de " + expediteur + " : " + message);
+    }
 }
