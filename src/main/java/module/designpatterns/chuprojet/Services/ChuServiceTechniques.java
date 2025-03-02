@@ -2,7 +2,6 @@
 package module.designpatterns.chuprojet.Services;
 
 import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,8 +10,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ServiceTechniques extends Service {
-    public ServiceTechniques(Long id) {
+public class ChuServiceTechniques extends ChuService {
+    public ChuServiceTechniques(Long id) {
         super(id);
+    }
+
+    @Override
+    public void servie() {
+        System.out.println("service Techniques served");
+
     }
 }

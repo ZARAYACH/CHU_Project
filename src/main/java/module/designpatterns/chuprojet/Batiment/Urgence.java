@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Urgence extends Batiment {
-    public Urgence(Long id, String emplacement, String taille, String fonctionnalite, String description) {
+    public Urgence(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 }
