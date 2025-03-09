@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Radiologie extends Batiment {
-    public Radiologie(Long id, String emplacement, String taille, String fonctionnalite, String description) {
+    public Radiologie(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 }

@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Laboratoires extends Batiment {
-    public Laboratoires(Long id, String emplacement, String taille, String fonctionnalite, String description) {
+    public Laboratoires(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 }
