@@ -21,4 +21,9 @@ public class ChuServiceUrgence extends ChuService {
         System.out.println("service Urgence served");
 
     }
+
+    @Override
+    public void update(String message) {
+        System.out.println("service Urgence updated");
+    }
 }

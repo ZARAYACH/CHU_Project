@@ -19,4 +19,9 @@ public class ChuServiceAnalyse extends ChuService {
     public void servie() {
         System.out.println("service analyse served");
     }
+
+    @Override
+    public void update(String message) {
+        System.out.println("service analyse update");
+    }
 }

@@ -20,4 +20,9 @@ public class ChuServiceTechniques extends ChuService {
         System.out.println("service Techniques served");
 
     }
+
+    @Override
+    public void update(String message) {
+        System.out.println("service Techniques update");
+    }
 }

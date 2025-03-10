@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter
+@Getter 
 @Setter
 @NoArgsConstructor
 public class ServicesMedicaux extends ChuService {
@@ -17,5 +17,10 @@ public class ServicesMedicaux extends ChuService {
     @Override
     public void servie() {
         System.out.println("service Medicaux served");
+    }
+
+    @Override
+    public void update(String message) {
+        System.out.println("service Medicaux update");
     }
 }

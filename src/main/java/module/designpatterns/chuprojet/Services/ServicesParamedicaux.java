@@ -19,4 +19,9 @@ public class ServicesParamedicaux extends ChuService {
     public void servie() {
         System.out.println("service Paramedicaux served");
     }
+
+    @Override
+    public void update(String message) {
+        System.out.println("service Paramedicaux update");
+    }
 }

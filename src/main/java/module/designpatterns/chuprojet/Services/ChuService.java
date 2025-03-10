@@ -14,7 +14,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "chu_service")
-public abstract class ChuService implements Service {
+public abstract class ChuService implements Service , Observateur{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
