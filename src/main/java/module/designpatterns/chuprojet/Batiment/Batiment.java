@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import module.designpatterns.chuprojet.Person.Personnel;
+import module.designpatterns.chuprojet.Person.modal.Personnel;
 
 import java.util.Collection;
 

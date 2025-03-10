@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import module.designpatterns.chuprojet.Person.Medecin;
-import module.designpatterns.chuprojet.Person.Patient;
+import module.designpatterns.chuprojet.Person.modal.Medecin;
+import module.designpatterns.chuprojet.Person.modal.Patient;
 
 import java.util.List;
 
