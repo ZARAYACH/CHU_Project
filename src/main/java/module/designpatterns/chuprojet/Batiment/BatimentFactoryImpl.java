@@ -1,5 +1,7 @@
 package module.designpatterns.chuprojet.Batiment;
 
+import module.designpatterns.chuprojet.Batiment.modal.*;
+
 public class BatimentFactoryImpl implements BatimentFactory {
 
     @Override
