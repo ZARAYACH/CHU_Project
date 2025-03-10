@@ -1,5 +1,5 @@
 
-package module.designpatterns.chuprojet.Services.modal;
+package module.designpatterns.chuprojet.services.modal;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;

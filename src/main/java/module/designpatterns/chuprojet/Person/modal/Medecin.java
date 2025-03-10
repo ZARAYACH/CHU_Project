@@ -6,7 +6,7 @@ import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import module.designpatterns.chuprojet.Batiment.Batiment;
+import module.designpatterns.chuprojet.Batiment.modal.Batiment;
 import module.designpatterns.chuprojet.sections.Section;
 
 import java.time.LocalDateTime;

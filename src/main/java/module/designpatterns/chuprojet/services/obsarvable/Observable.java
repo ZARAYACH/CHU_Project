@@ -1,4 +1,4 @@
-package module.designpatterns.chuprojet.Services.obsarvable;
+package module.designpatterns.chuprojet.services.obsarvable;
 
 import java.util.ArrayList;
 import java.util.List;

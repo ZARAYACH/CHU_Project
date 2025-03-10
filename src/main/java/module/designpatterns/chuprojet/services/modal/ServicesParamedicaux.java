@@ -1,5 +1,4 @@
-
-package module.designpatterns.chuprojet.Services.modal;
+package module.designpatterns.chuprojet.services.modal;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;
@@ -10,20 +9,19 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class ChuServiceUrgence extends ChuService {
+public class ServicesParamedicaux extends ChuService {
 
-    public ChuServiceUrgence(Long id) {
+    public ServicesParamedicaux(Long id) {
         super(id);
     }
 
     @Override
     public void servie() {
-        System.out.println("service Urgence served");
-
+        System.out.println("service Paramedicaux served");
     }
 
     @Override
     public void update(String message) {
-        System.out.println("service Urgence updated");
+        System.out.println("service Paramedicaux update");
     }
 }

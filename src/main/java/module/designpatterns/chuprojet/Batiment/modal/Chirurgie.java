@@ -1,5 +1,5 @@
 
-package module.designpatterns.chuprojet.Batiment;
+package module.designpatterns.chuprojet.Batiment.modal;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;
@@ -10,8 +10,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Urgence extends Batiment {
-    public Urgence(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
+public class Chirurgie extends Batiment {
+    public Chirurgie(Long id, String emplacement, Long taille, String fonctionnalite, String description) {
         super(id, emplacement, taille, fonctionnalite, description);
     }
 }

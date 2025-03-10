@@ -1,4 +1,4 @@
-package module.designpatterns.chuprojet.Services.composite;
+package module.designpatterns.chuprojet.services.composite;
 
 import java.util.ArrayList;
 import java.util.List;

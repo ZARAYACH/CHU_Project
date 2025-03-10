@@ -1,6 +1,7 @@
 package module.designpatterns.chuprojet.Batiment;
 
 import lombok.Getter;
+import module.designpatterns.chuprojet.Batiment.modal.Batiment;
 
 public class BatimentAdaptateur implements BatimentAdaptable {
     @Getter

@@ -1,12 +1,12 @@
-package module.designpatterns.chuprojet.Services.modal;
+package module.designpatterns.chuprojet.services.modal;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import module.designpatterns.chuprojet.Services.obsarvable.Observateur;
-import module.designpatterns.chuprojet.Services.composite.Service;
+import module.designpatterns.chuprojet.services.obsarvable.Observateur;
+import module.designpatterns.chuprojet.services.composite.Service;
 
 
 @Entity

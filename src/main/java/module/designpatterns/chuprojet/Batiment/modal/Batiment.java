@@ -1,4 +1,4 @@
-package module.designpatterns.chuprojet.Batiment;
+package module.designpatterns.chuprojet.Batiment.modal;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
